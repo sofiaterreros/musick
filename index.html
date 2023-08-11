@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>/mu/sick</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="row">
+        <div class="col-md-4">
+        <img
+          src="./imagenes/musick-logo.png"
+          alt="Logo musick"
+          height="100px"
+        />
+      </div>
+    </div>
+      <div class="col-md-8 menu">
+        <nav>
+          <ul>
+            <a href="index.html"><li>Inicio</li></a>
+                <a href="novedades.html"><li>Novedades</li></a>
+                <a href="contacto.html"><li>Contacto</li></a>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="presentacion">
+      <h1>Bienvenidx</h1>
+      <p>
+        En esta página encontrarás recomendaciones musicales de todo tipo y de
+        todas las variedades de género, lo que buscamos es ofrecerte nuevas
+        alternativas de artistas. Una página creada para aquellos que suelen
+        sentirse aburridos de lo que escuchan normalmente, como la creadora.
+      </p>
+    </div>
+
+    <div class="artistasdelmes container-md">
+      <h2>Géneros del mes</h2>
+    </div>
+
+    
+      <div class="rowuno">
+        <div class="caja1 col-md-4">
+          <h3>Jazz Funk</h3>
+          <img src="./imagenes/herbie-hancock.png" alt="Herbie Hancock" />
+          <h4>Herbie Hancock</h4>
+          <div id="herbie">
+          <p>
+            El jazz funk es un género musical que surgió a fines de la década de
+            1960 y se volvió prominente en la década de 1970. Es un género de
+            fusión que combina elementos de jazz, funk y música soul, creando un
+            sonido rítmico y maravilloso con énfasis en ritmos fuertes y
+            bailables.
+          </p>
+        </div>
+        <button onclick='muestra_oculta("herbie")' 
+                class="btn btn-primary" form="herbie">Leer</button>
+        </div>
+
+        <div class="caja1 col-md-4">
+          <h3>Afrobeat</h3>
+          <img src="./imagenes/fela-kuti.png" alt="Fela Kuti" />
+          <h4>Fela Kuti</h4>
+          <div id="fela">
+            <p>
+            Afrobeat es un género musical dinámico que se originó en África
+            Occidental, particularmente en Nigeria, a fines de la década de 1960
+            y principios de la de 1970. Fue desarrollado y popularizado por el
+            músico y activista político nigeriano, Fela Kuti. Afrobeat es una
+            fusión de varios estilos musicales, incluida la música tradicional
+            de África occidental, el highlife, el jazz, el funk y el soul.
+          </p>
+        </div>
+        <button onclick='muestra_oculta("fela")' 
+        class="btn btn-primary" form="fela">Leer</button>
+        </div>
+
+        <div class="caja1 col-md-4">
+          <h3>Trip Hop</h3>
+          <img src="./imagenes/massive-attack.png" alt="Massive Attack" />
+          <h4>Massive Attack</h4>
+          <div id="massive">
+          <p>
+            El trip hop es un género de música electrónica que surgió a
+            principios de la década de 1990, principalmente en el Reino Unido.
+            Se caracteriza por su sonido atmosférico y downtempo, que combina
+            elementos de hip hop, electrónica, jazz y otros géneros para crear
+            una experiencia musical distinta e inmersiva.
+          </p>
+        </div>
+        <button onclick='muestra_oculta("massive")' 
+        class="btn btn-primary" form="massive">Leer</button>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./imagenes/carinopop.png"
+            class="d-block w-100 carrusel-images"
+            alt="Cariño "
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Cariño</h5>
+            <p>
+              Cariño es una banda musical española de pop, indie pop, tontipop y
+              punkpop. La banda está compuesta por Paola Rivero, Alicia Ros y
+              María Talaverano.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./imagenes/fishmans.png"
+            class="d-block w-100 carrusel-images"
+            alt="Fishamns"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Fishmans</h5>
+            <p>
+              Traducción del inglés-Fishmans es una banda japonesa formada en
+              1987 en Minato, Tokio. Son conocidos por su sonido psicodélico
+              único y la voz distintiva del difunto cantante principal Shinji
+              Sato, así como por la forma de tocar la batería de Kin-Ichi Motegi
+              y las líneas de bajo rocksteady de Yuzuru Kashiwabara.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./imagenes/warpaint.png"
+            class="d-block w-100 carrusel-images"
+            alt="Warpaint"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Warpaint</h5>
+            <p>
+              Warpaint es un grupo de indie rock estadounidense, formado en Los
+              Ángeles en 2004, ​ y actualmente compuesto por Emily Kokal,
+              Theresa Wayman, Jenny Lee Lindberg y Stella Mozgawa.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+
+    <div class="artistasdelmes2 container-md">
+      <h2>Mujeres del mes</h2>
+    </div>
+
+    <div class="container-fluid">
+      <div class="rowdos">
+        <div class="caja2 col-md-3">
+          <img src="./imagenes/diana-krall.jpg" alt="Diana Krall" />
+          <h3>Diana Krall</h3>
+          <h4>Jazz</h4>
+        </div>
+
+        <div class="parrafosolo col-md-3">
+          <p>
+            Diana Jean Krall (Nanaimo, 16 de noviembre de 1964) es una pianista
+            y cantante de jazz canadiense. Ha vendido más de 6 millones de
+            discos en los Estados Unidos y más de 15 millones en todo el mundo.
+            En total, vendió más discos que cualquier otra artista de jazz
+            durante las décadas de 1990 y 2000.
+          </p>
+        </div>
+
+        <div class="caja2 col-md-3">
+          <img src="./imagenes/taeko-ohnuki.jpg" alt="Taeko Ohnuki" />
+          <h3>Taeko Ohnuki</h3>
+          <h4>City Pop</h4>
+        </div>
+
+        <div class="parrafosolo col-md-3">
+          <p>
+            Activa desde principios de los 70, fue miembro de Sugar Babe con
+            Tatsuro Yamashita. A mediados de la década de 1970, comenzó a lanzar
+            álbumes en solitario, colaborando regularmente con Ryuichi Sakamoto
+            y otros miembros de la Yellow Magic Orchestra.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        Todos los derechos reservados por /mu/sick. Propiedad de Sofia Terreros.
+      </p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
